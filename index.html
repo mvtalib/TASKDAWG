@@ -5,81 +5,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TASKDAWG</title>
+    <title>TASKDAWG | Manage Your Work</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="navbar">
+    
+    <header class="navbar" id="home">
 
-        <div class="logo">
+        <a href="#home" class="logo">
             TASK<span>DAWG</span>
-        </div>
+        </a>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
+        <nav aria-label="Main navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
         </nav>
 
         <div class="nav-buttons">
-            <button class="login-btn">Login</button>
-            <button class="signup-btn">Get Started</button>
+            <a href="#contact" class="login-btn">Contact Us</a>
+            <a href="#features" class="signup-btn">Explore</a>
         </div>
 
     </header>
 
-    <main class="hero">
 
-        <div class="hero-content">
+    <main>
 
-            <p class="tagline">TASK MANAGEMENT SYSTEM</p>
+        
+        <section class="hero">
 
-            <h1>
-                Get your work
-                <span>done.</span>
-            </h1>
+            <div class="hero-content">
 
-            <p class="description">
-                YOUR PERSONAL DAWG FOR MANAGING AND TRACKING YOUR WORK
+                <p class="tagline">TASK MANAGEMENT SYSTEM</p>
+
+                <h1>
+                    Get your work
+                    <span>done.</span>
+                </h1>
+
+                <p class="description">
+                    YOUR PERSONAL DAWG FOR MANAGING AND TRACKING YOUR WORK
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#features" class="primary-btn">
+                        Explore Features →
+                    </a>
+
+                    <a href="#about" class="secondary-btn">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-design" aria-hidden="true">
+
+                <div class="red-circle"></div>
+
+                <div class="design-card card-one">
+                    <span>01</span>
+                    <p>PLAN</p>
+                </div>
+
+                <div class="design-card card-two">
+                    <span>02</span>
+                    <p>TRACK</p>
+                </div>
+
+                <div class="design-card card-three">
+                    <span>03</span>
+                    <p>DONE</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+                <p class="tagline">GET TO KNOW US</p>
+                <h2>About <span>TASKDAWG</span></h2>
+
+                <p class="section-description">
+                    A smarter way to organize your work and stay focused
+                    on what matters.
+                </p>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <h3>Your work. Your goals. Your control.</h3>
+
+                    <p>
+                        TASKDAWG is a task management system designed to
+                        help users organize their daily work, keep track
+                        of important responsibilities and manage their
+                        tasks in one place.
+                    </p>
+
+                    <p>
+                        Our goal is to make task management simple,
+                        clear and convenient, so users can focus on
+                        completing their work instead of struggling
+                        to organize it.
+                    </p>
+
+                    <a href="#features" class="text-link">
+                        Discover our features →
+                    </a>
+                </div>
+
+                <div class="about-highlight">
+                    <div class="highlight-mark">TD.</div>
+                    <h3>Stay organized.</h3>
+                    <p>
+                        Turn your plans into progress, one task at a time.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="section features-section" id="features">
+
+            <div class="section-heading">
+                <p class="tagline">WHAT YOU CAN DO</p>
+                <h2>Built for your <span>workflow.</span></h2>
+
+                <p class="section-description">
+                    The essential tools for organizing tasks and
+                    managing your work efficiently.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <div class="feature-icon" aria-hidden="true">＋</div>
+
+                    <h3>Task Management</h3>
+
+                    <p>
+                        Create, organize, edit and delete tasks
+                        according to your needs.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <div class="feature-icon" aria-hidden="true">✓</div>
+
+                    <h3>Progress Tracking</h3>
+
+                    <p>
+                        Mark tasks as completed and keep track
+                        of your work as you progress.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <div class="feature-icon" aria-hidden="true">≡</div>
+
+                    <h3>Task Organization</h3>
+
+                    <p>
+                        Keep your responsibilities organized
+                        and make important tasks easier to manage.
+                    </p>
+                </article>
+
+            </div>
+
+            <p class="feature-note">
+                These are planned capabilities. They will become
+                functional as we develop the application.
             </p>
 
-            <div class="hero-buttons">
-                <button class="primary-btn">Get Started →</button>
-                <button class="secondary-btn">Learn More</button>
+        </section>
+
+
+        
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+                <p class="tagline">LET'S CONNECT</p>
+                <h2>Get in <span>touch.</span></h2>
+
+                <p class="section-description">
+                    Have a question or suggestion about TASKDAWG?
+                    We'd like to hear from you.
+                </p>
             </div>
 
-        </div>
+            <form class="contact-form" id="contactForm">
 
-        <div class="hero-design">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
 
-            <div class="red-circle"></div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
 
-            <div class="design-card card-one">
-                <span>01</span>
-                <p>PLAN</p>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What is this about?"
+                        required
+                    >
+                </div>
 
-            <div class="design-card card-two">
-                <span>02</span>
-                <p>TRACK</p>
-            </div>
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
 
-            <div class="design-card card-three">
-                <span>03</span>
-                <p>DONE</p>
-            </div>
+                <button type="submit" class="primary-btn">
+                    Submit Message →
+                </button>
 
-        </div>
+                <p
+                    class="form-notice"
+                    id="formNotice"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
 
     </main>
 
-    <footer>
-        <p>© 2026 TASKDAWG RESERVED </p>
+
+    
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            TASK<span>DAWG</span>
+        </a>
+
+        <p>Organize your work. Get things done.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 TASKDAWG. All rights reserved.
+        </p>
+
     </footer>
+
+
+    
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const formNotice = document.getElementById("formNotice");
+
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            formNotice.textContent =
+                "This form is a frontend demo. Messages cannot be sent yet.";
+
+            formNotice.classList.add("visible");
+        });
+    </script>
 
 </body>
 </html>
