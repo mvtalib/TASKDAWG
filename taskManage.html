@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager | TASKDAWG</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html">TASK<span>DAWG</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="taskmanagement.html" class="active">My Tasks</a>
+        </nav>
+        <a href="login.html" class="btn btn-outline">Login</a>
+    </header>
+
+    <main class="task-page">
+        <div class="task-heading">
+            <p class="eyebrow">YOUR WORKSPACE</p>
+            <h1>Task <span>Management.</span></h1>
+            <p>One task at a time. Keep moving forward.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>To Do</p>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+            </div>
+        </div>
+
+        <section class="task-panel">
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm" class="task-form">
+                <div class="form-group task-title-group">
+                    <label for="taskTitle">Task name</label>
+                    <input type="text" id="taskTitle" placeholder="What do you need to do?" required maxlength="150">
+                </div>
+
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="Normal">Normal</option>
+                        <option value="High">High</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskDueDate">Due date</label>
+                    <input type="date" id="taskDueDate">
+                </div>
+
+                <button type="submit" class="btn btn-red add-task-button">+ Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-panel">
+            <div class="task-list-heading">
+                <h2>My Tasks</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn selected" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pending">To Do</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+            </div>
+
+            <div id="taskList" class="task-list"></div>
+            <p id="emptyMessage" class="empty-message">
+                No tasks yet. Add your first task above!
+            </p>
+        </section>
+
+        <p class="storage-note">
+            Your tasks are saved in this browser on this device.
+        </p>
+    </main>
+
+    <footer>
+        <a class="logo" href="index.html">TASK<span>DAWG</span></a>
+        <p class="copyright">© 2026 TASKDAWG</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TASKDAWG</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body class="auth-page">
+    <header class="navbar">
+        <a class="logo" href="index.html">TASK<span>DAWG</span></a>
+        <a href="index.html" class="nav-home">← Back to Home</a>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <p class="eyebrow">WELCOME BACK</p>
+            <h1>Login to <span>TASKDAWG</span></h1>
+            <p class="auth-description">Enter your details to continue.</p>
+
+            <form id="loginForm">
+                <label for="loginEmail">Email address</label>
+                <input type="email" id="loginEmail" placeholder="you@example.com" required>
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+
+                <button class="btn btn-red full-width" type="submit">Login →</button>
+                <p id="loginMessage" class="form-message"></p>
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
